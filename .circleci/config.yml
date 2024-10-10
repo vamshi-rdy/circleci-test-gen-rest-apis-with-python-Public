@@ -21,7 +21,7 @@ jobs:
           name: package application
           command: |
             # . venv/bin/activate
-            zip code.zip api_generator.py
+            zip code.zip api/api_generator.py
             pwd
             ls
       - persist_to_workspace:
