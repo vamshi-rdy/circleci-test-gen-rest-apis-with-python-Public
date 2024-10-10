@@ -85,8 +85,6 @@ jobs:
             . venv/bin/activate
             pwd
             ls
-            cd src
-            ls
             pip install --upgrade pip
             pipenv install
             pip install flask
