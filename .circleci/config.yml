@@ -14,7 +14,6 @@ jobs:
             pip install --upgrade pip
             pip install -r requirements.txt
             # pipenv install
-            pip install
             pip install flask
             pip install --upgrade setuptools
             pip install markupsafe
