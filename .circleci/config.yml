@@ -55,7 +55,9 @@ jobs:
     #     default: testapistack
       
     steps:
-      - checkout
+      # - checkout
+      - attach_workspace:
+          at: ~/project
       - run:
           name: Install AWS CLI
           command: pip install awscli
