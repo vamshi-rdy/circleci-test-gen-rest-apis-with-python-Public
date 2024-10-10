@@ -16,7 +16,7 @@ jobs:
             pipenv install
             pip install flask
             pip install --upgrade setuptools
-            pip install markupsafe==1.1.1
+            pip install markupsafe
       - run:
           name: package application
           command: |
@@ -89,7 +89,7 @@ jobs:
             pipenv install
             pip install flask
             pip install --upgrade setuptools
-            pip install markupsafe==1.1.1
+            pip install markupsafe
             # python api_generator.py
             python code.zip
 workflows:
