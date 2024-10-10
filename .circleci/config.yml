@@ -97,8 +97,13 @@ workflows:
   version: 2
   testdeploy:
     jobs:
+      - build:
+          name: package api
+          context: aws-credential-dev
       - deploy:
           name: deploy-api
+          requires:
+            - package api
           context: aws-credential-dev
           filters:
             branches:
